@@ -44,7 +44,7 @@ class HelloHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(content.encode())
 
-print("Welcome To The Sai Ganesh Webpage")
+print("Welcome To My Webpage")
 server_address=('',80)
 httpd=HTTPServer(server_address,HelloHandler)
 httpd.serve_forever()
